@@ -1,4 +1,3 @@
-import type { or } from "three/tsl";
 import type { Well } from "../types/well.ts";
 
 export const makeHoleSections = (
