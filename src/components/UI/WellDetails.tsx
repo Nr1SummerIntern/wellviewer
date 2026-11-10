@@ -154,7 +154,7 @@ export function WellDetails({ well, factsheet, availabilityNote }: Props) {
           <p className="well-details-coverage">
             {firstMD > 0
               ? `The survey starts at ${depthFormat.format(firstMD)} m MD. Vertical and horizontal displacements are relative to that first station; the missing interval to surface is not included.`
-              : "Survey end MD is the end of the loaded trajectory and may differ from the documented well depth. Displacements are relative to the first survey station."}
+              : "Survey end MD is the end of the loaded trajectory and may differ from the documented well depth."}
           </p>
         )}
       </section>
@@ -164,7 +164,6 @@ export function WellDetails({ well, factsheet, availabilityNote }: Props) {
           <h3>Source factsheet</h3>
           <p>{source.title}</p>
           <p className="well-details-source-revision">Revision {source.revision} · <time dateTime={source.date}>{formatDate(source.date)}</time></p>
-          <p className="well-details-caption">RKB = rotary kelly bushing; sg = specific gravity.</p>
           <a
             href={`${import.meta.env.BASE_URL}factsheets/${encodeURIComponent(source.filename)}`}
             target="_blank"
