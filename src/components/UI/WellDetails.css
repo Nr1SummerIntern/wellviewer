@@ -1,0 +1,259 @@
+.well-details {
+  min-width: 0;
+  color: #e5e7eb;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.well-details-header {
+  margin: 2px 0 20px;
+}
+
+.well-details .well-details-eyebrow {
+  margin: 0 0 3px;
+  color: #9aafc1;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.well-details-header h2 {
+  margin: 0;
+  color: #e8f4ff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.well-details-section {
+  margin: 0 0 16px;
+  padding: 14px;
+  border: 1px solid #344352;
+  border-radius: 7px;
+  background: #111820;
+}
+
+.well-details-section h3 {
+  margin: 0 0 12px;
+  color: #8fb8d8;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.well-details-section p {
+  margin: 8px 0 0;
+  color: #d1dce7;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.well-details-summary {
+  border-left: 3px solid #00d4ff;
+}
+
+.well-details-section .well-details-caption {
+  margin: -4px 0 12px;
+  color: #a7b8c8;
+  font-size: 12px;
+}
+
+.well-details-section .well-details-coverage {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #344352;
+  color: #b1c2d2;
+  font-size: 12px;
+}
+
+.well-details-section .well-details-survey-note {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border-left: 3px solid #d6ad5d;
+  border-radius: 3px;
+  background: #2a251b;
+  color: #ebd8b5;
+  font-size: 12px;
+}
+
+.well-details-casings {
+  display: grid;
+  gap: 12px;
+}
+
+.well-details-casing {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #344352;
+  border-radius: 5px;
+  background: #19232e;
+}
+
+.well-details-casing h4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 9px;
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.well-details-casing h4 > span {
+  color: #70d7ef;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.well-details-casing .well-details-setting-depth {
+  margin: 4px 0 10px;
+  color: #d4e6f7;
+  font-size: 12px;
+}
+
+.well-details-facts {
+  margin: 0;
+}
+
+.well-details-facts > div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 8px 12px;
+  padding: 8px 0;
+  border-top: 1px solid #2b3947;
+}
+
+.well-details-facts > div:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.well-details-facts > div:last-child {
+  padding-bottom: 0;
+}
+
+.well-details-facts dt {
+  color: #9db2c5;
+  font-size: 12px;
+}
+
+.well-details-facts dd {
+  margin: 0;
+  color: #e0e9f1;
+  font-size: 12px;
+  white-space: pre-line;
+}
+
+.well-details-notes {
+  margin: 12px 0 0;
+  padding-left: 17px;
+  color: #c6d4e1;
+  font-size: 12px;
+}
+
+.well-details-notes li + li {
+  margin-top: 7px;
+}
+
+.well-details-holes {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.well-details-holes thead th {
+  padding: 0 0 8px;
+  color: #9db2c5;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.well-details-holes tbody th,
+.well-details-holes td {
+  padding: 10px 0;
+  border-top: 1px solid #344352;
+  vertical-align: top;
+}
+
+.well-details-holes tbody th {
+  width: 58%;
+  padding-right: 10px;
+  color: #e0e9f1;
+  font-weight: 500;
+}
+
+.well-details-holes td {
+  color: #d1dce7;
+  font-variant-numeric: tabular-nums;
+}
+
+.well-details-hole-meta,
+.well-details-hole-note {
+  display: block;
+  margin-top: 3px;
+  color: #9db2c5;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.well-details-hole-note {
+  color: #c6d4e1;
+}
+
+.well-details-source {
+  background: transparent;
+}
+
+.well-details-source .well-details-source-revision {
+  margin-bottom: 12px;
+  color: #a7b8c8;
+  font-size: 12px;
+}
+
+.well-details-source a {
+  display: inline-block;
+  padding: 8px 11px;
+  border: 1px solid #426377;
+  border-radius: 4px;
+  color: #78d9ee;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.well-details-source a:hover {
+  border-color: #78d9ee;
+  background: #20323f;
+  text-decoration: underline;
+}
+
+.well-details-source a:focus-visible {
+  outline: 2px solid #78d9ee;
+  outline-offset: 3px;
+}
+
+.well-details-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 600px) {
+  .well-details-section {
+    padding: 12px;
+  }
+
+  .well-details-casing {
+    padding: 10px;
+  }
+}

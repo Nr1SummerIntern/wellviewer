@@ -1,4 +1,5 @@
 import type { Well } from "../types/well.ts";
+import { wellFactsheets } from "./wellFactsheets.ts";
 
 export const makeHoleSections = (
   sections: Array<{
@@ -14,7 +15,7 @@ export const makeHoleSections = (
 export const U1: Well = {
   id: "well-002",
   name: "U1",
-  summary: "Well U1 is a deviated research/test well drilled to approximately 1324 m Measured Depth (MD), with survey data ending at 950 m. The well includes multiple hole sections and a single surface casing string. The trajectory remains relatively straight with low inclination throughout most of the well.",
+  summary: wellFactsheets["well-002"].summary,
   holeSections: makeHoleSections([
   { name: '17 1/2"', top: 0, bottom: 354, type: 'Casing', diameter: 17.5 },
   { name: '12 1/4"', top: 354, bottom: 1261.3, type: 'Open hole', diameter: 12.25 },
@@ -56,7 +57,7 @@ export const U1: Well = {
 export const U2: Well = {
   id: "well-003",
   name: "U2",
-  summary: "U2 is a high-angle directional well drilled from a surface location equipped with a 13⅝\" 5K wellhead. The well kicks off at 300 m MD, builds inclination at 3°/30 m, passes its closest approach to the neighboring U1 well at approximately 500 m MD, and transitions into a 60-63° tangent section to achieve lateral displacement from the surface location.",
+  summary: wellFactsheets["well-003"].summary,
   holeSections: makeHoleSections([
   { name: '13 3/8" Surface casing', top: 0, bottom: 1520, type: 'Casing', diameter: 13.375 },
   { name: '9 5/8"', top: 0, bottom: 2010, type: 'Bull nose', diameter: 9.625 },
@@ -175,7 +176,7 @@ export const U2: Well = {
 export const U3: Well = {
   id: "well-004",
   name: "U3",
-  summary: "U3 is a deviated scientific well drilled from a 13⅝ wellhead, reaching approximately 24° inclination and penetrating phyllite, schist, and granitic augen gneiss formations. The well was completed with 13⅝ surface casing to 334 m MD and 9⅝ casing to 796 m MD before drilling an 8½ open hole to 924 m MD. The lower section was subsequently cemented, providing access to the crystalline basement rocks for research and testing purposes.",
+  summary: wellFactsheets["well-004"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 32, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 32, bottom: 240, type: "Casing", diameter: 20 },
@@ -216,7 +217,7 @@ export const U3: Well = {
 export const U4: Well = {
   id: "well-005",
   name: "U4",
-  summary: "U4 is a steeply deviated well with a strong build section and a long hold section approaching a near-vertical target.",
+  summary: wellFactsheets["well-005"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 35, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 35, bottom: 250, type: "Casing", diameter: 20 },
@@ -259,7 +260,7 @@ export const U4: Well = {
 export const U5: Well = {
   id: "well-006",
   name: "U5",
-  summary: "U5 is a shallow-to-moderate angle well designed to test an early trajectory change before the main target corridor.",
+  summary: wellFactsheets["well-006"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 25, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 25, bottom: 200, type: "Casing", diameter: 18.5 },
@@ -315,7 +316,7 @@ export const U5: Well = {
 export const U5X: Well = {
   id: "well-007",
   name: "U5X",
-  summary: "U5X is the offset pilot for U5, with a slightly more aggressive turn and a longer directional run.",
+  summary: "U5X is represented by a directional survey reaching 453.2 m MD, with a maximum inclination of 31.49°. Its casing and completion details are unconfirmed.",
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 25, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 25, bottom: 210, type: "Casing", diameter: 18.5 },
@@ -380,7 +381,7 @@ export const U5X: Well = {
 export const U5A: Well = {
   id: "well-008",
   name: "U5A",
-  summary: "U5A is a corrected sidetrack that gradually builds inclination toward a more stable azimuth while maintaining a narrow radius.",
+  summary: wellFactsheets["well-008"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 30, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 30, bottom: 220, type: "Casing", diameter: 18.5 },
@@ -426,7 +427,7 @@ export const U5A: Well = {
 export const U6: Well = {
   id: "well-010",
   name: "U6",
-  summary: "U6 is a consistent directional well that builds quickly before flattening into a long hold section.",
+  summary: "This U6 trajectory reaches 401 m MD, with a maximum surveyed inclination of 29.59°. It is displayed separately from U6B (Wisting); its casing and completion details are unconfirmed.",
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 35, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 35, bottom: 200, type: "Casing", diameter: 20 },
@@ -482,7 +483,7 @@ export const U6: Well = {
 export const U6A: Well = {
   id: "well-011",
   name: "U6A",
-  summary: "U6A is a near-horizontal offset with a deliberately smooth build profile and precise azimuth control.",
+  summary: "U6A is represented by a directional survey reaching 283.11 m MD, with a maximum inclination of 28.31°. Its casing and completion details are unconfirmed.",
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 20, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 20, bottom: 170, type: "Casing", diameter: 18.5 },
@@ -610,7 +611,7 @@ export const U6A: Well = {
 export const U6B: Well = {
   id: "well-012",
   name: "U6B (Wisting)",
-  summary: "U6B is a high-angle well with an aggressive build profile and a long, near-vertical hold interval.",
+  summary: wellFactsheets["well-012"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 20, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 20, bottom: 180, type: "Casing", diameter: 18.5 },
@@ -666,7 +667,7 @@ export const U6B: Well = {
 export const U7: Well = {
   id: "well-013",
   name: "U7",
-  summary: "U7 is a short pilot well used to confirm trajectory and casing requirements before wider development drilling.",
+  summary: wellFactsheets["well-013"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 20, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 20, bottom: 120, type: "Casing", diameter: 18.5 },
@@ -687,7 +688,7 @@ export const U7: Well = {
 export const U8: Well = {
   id: "well-014",
   name: "U8",
-  summary: "U8 is a long, progressive build well with stable azimuth and an extended hold section toward the target.",
+  summary: wellFactsheets["well-014"].summary,
   holeSections: makeHoleSections([
     { name: "Surface conductor", top: 0, bottom: 18, type: "Conductor", diameter: 30 },
     { name: "Surface casing", top: 18, bottom: 180, type: "Casing", diameter: 20 },
